@@ -84,14 +84,25 @@ nav img{
 	font-size: 40px;
 	color: #f44336;
 }
+.footer{
+	text-align:center;
+}
 .social{
-	display: inline-block;
-	text-decoration: none;
+	position: absolute;
+	top: 80%;
+	left: 46%;
 	color: #fff;
-	border: 1px solid#fff;
-	padding: 12px 34px;
-	font-size: 13px;
-	background: transparent;
-	position: relative;
-	cursor: pointer;
+}
+.icons{
+	position: absolute;
+	top: 85%;
+	left: 49%;
+	color: #fff;
+}
+.right{
+	position: absolute;
+	top: 96%;
+	left: 41%;
+	color: #fff;
+	background-color: black;
 }
