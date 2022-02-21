@@ -15,6 +15,36 @@
     });
   });
 </script>
+       <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101870252390696");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </head>
 <body>
 	<section class="header">
@@ -58,70 +88,9 @@
 			<a href="https://twitter.com/bishalkafle2003" target="_blank"><img src="assets/socialmedia/twitter.png" height="50px" width="50"></a>
 			<a href="https://www.youtube.com/channel/UCXX5xz9qcQRyCqbm45w2GfA/featured" target="_blank"><img src="assets/socialmedia/youtube.png" height="50px" width="50"></a>
         </div>
-        <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101870252390696");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+ 
 		
 	</section>
-	<div class="messenger">
-		        <!-- Messenger Chat Plugin Code -->
-				<div id="fb-root"></div>
-
-				<!-- Your Chat Plugin code -->
-				<div id="fb-customer-chat" class="fb-customerchat">
-				</div>
-			
-				<script>
-				  var chatbox = document.getElementById('fb-customer-chat');
-				  chatbox.setAttribute("page_id", "101870252390696");
-				  chatbox.setAttribute("attribution", "biz_inbox");
-				</script>
-			
-				<!-- Your SDK code -->
-				<script>
-				  window.fbAsyncInit = function() {
-					FB.init({
-					  xfbml            : true,
-					  version          : 'v12.0'
-					});
-				  };
-			
-				  (function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s); js.id = id;
-					js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-					fjs.parentNode.insertBefore(js, fjs);
-				  }(document, 'script', 'facebook-jssdk'));
-				</script>
-	</div>
 	
 </body>
 </html>
